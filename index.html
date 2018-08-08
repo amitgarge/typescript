@@ -1,3 +1,4 @@
+<!--Home page -->
 <!doctype html>
 <html lang="en">
 
@@ -14,7 +15,29 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #563D7C;">
+            <a class="navbar-brand" style="color: white" href="#">TypeScript</a>
+        </nav>
+        <!--Links to two different class Data-->
+        <div class="content d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <div class="card m-2" style="width: 18rem;">
+                <div class="card-body"><!--You Tube Data-->
+                    <h5 class="card-title">You Tube</h5>
+                    <p class="card-text">YouTube Channel and video Information using classes, Inheritance etc.</p>
+                    <a href="YouTube/youtubeData.html" class="d-flex justify-content-center btn btn-primary">Go</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body"><!--Facebook Data-->
+                    <h5 class="card-title">Social Profile</h5>
+                    <p class="card-text">Facebook profile Information using classes, Inheritance, class methods.</p>
+                    <a href="SocialProfile/facebookData.html" class="d-flex justify-content-center btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
