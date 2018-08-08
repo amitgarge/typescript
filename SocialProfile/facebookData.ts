@@ -261,7 +261,7 @@ class Facebook {
     }
 
     getFriends_Count = () => {
-        console.log("Total friends: " + this.friends_count.no_of_friends);
+        console.log("\nTotal friends: " + this.friends_count.no_of_friends);
         console.log("Current City Friends: " + this.friends_count.current_city_friends);
         console.log("No. of followers: " + this.friends_count.no_of_follerwers);
         console.log("No. of following: " + this.friends_count.no_of_follwing);

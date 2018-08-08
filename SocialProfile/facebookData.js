@@ -176,7 +176,7 @@ var Facebook = /** @class */ (function () {
                 console.log("\nFamily member details- Hidden or unavailable");
         };
         this.getFriends_Count = function () {
-            console.log("Total friends: " + _this.friends_count.no_of_friends);
+            console.log("\nTotal friends: " + _this.friends_count.no_of_friends);
             console.log("Current City Friends: " + _this.friends_count.current_city_friends);
             console.log("No. of followers: " + _this.friends_count.no_of_follerwers);
             console.log("No. of following: " + _this.friends_count.no_of_follwing);
