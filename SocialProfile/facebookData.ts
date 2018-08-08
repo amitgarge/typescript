@@ -250,14 +250,14 @@ class Facebook {
     getFamily_Member_Details = () => {
 
         if (this.family_members.family_member_name) {
-            console.log("Family member details- ");
+            console.log("\nFamily member details- ");
             console.log("Name: " + this.family_members.family_member_name);
             console.log("Relation: " + this.family_members.realtion);
             console.log("Profile url: " + this.family_members.family_member_profile_url);
             console.log("Profile Picture url: " + this.family_members.family_member_profile_url);
         }
         else
-            console.log("Family member details- Hidden or unavailable");
+            console.log("\nFamily member details- Hidden or unavailable");
     }
 
     getFriends_Count = () => {
@@ -268,7 +268,7 @@ class Facebook {
     }
 
     getFriend_Info = () => {
-        console.log("Friend Information-");
+        console.log("\nFriend Information-");
         console.log("Name: " + this.friend_info.friend_name);
         console.log("No. of friends: " + this.friend_info.friends_total_friends);
         console.log("Mutual Friends: " + this.friend_info.mutual_friends);
@@ -553,7 +553,7 @@ class User_Information extends Facebook {
 
     getWork = () => {
         if (this.work) {
-            console.log("Current Work Details: ");
+            console.log("\nCurrent Work Details: ");
 
             if (this.work.designation)
                 console.log("Designation: " + this.work.designation);
@@ -571,12 +571,12 @@ class User_Information extends Facebook {
                 console.log("Working since: Hidden or unavailable");
         }
         else
-            console.log("Current Work Details: Hidden or unavailable");
+            console.log("\nCurrent Work Details: Hidden or unavailable");
     }
 
     getPrevious_Work = () => {
         if (this.previous_work) {
-            console.log("Previous Work details: ");
+            console.log("\nPrevious Work details: ");
             for (const work of this.previous_work) {
 
                 if (work.designation)
@@ -595,7 +595,7 @@ class User_Information extends Facebook {
                     console.log("Working here since: Hidden or unavailable");
             }
         } else
-            console.log("Previous work details: Hidden or unavailable");
+            console.log("\nPrevious work details: Hidden or unavailable");
     }
 
     getProfessional_Skills = () => {
@@ -607,7 +607,7 @@ class User_Information extends Facebook {
 
     getUniversity = () => {
         if (this.university) {
-            console.log("University details: ");
+            console.log("\nUniversity details: ");
             if (this.university.degree)
                 console.log("Degree: " + this.university.degree);
             else
@@ -623,12 +623,12 @@ class User_Information extends Facebook {
             else
                 console.log("Year: Hidden or unavailable");
         } else
-            console.log("University Details: Hidden or unavailable");
+            console.log("\nUniversity Details: Hidden or unavailable");
     }
 
     getHigh_School = () => {
         if (this.high_school) {
-            console.log("High School details: ");
+            console.log("\nHigh School details: ");
             if (this.high_school.name_of_the_school)
                 console.log("Name of the school: " + this.high_school.name_of_the_school + ", " + this.high_school.location);
             else
@@ -639,12 +639,12 @@ class User_Information extends Facebook {
             else
                 console.log("Year: Hidden or unavailable");
         } else
-            console.log("High school details: Hidden or unavailable");
+            console.log("\nHigh school details: Hidden or unavailable");
     }
 
     getOther_Schools = () => {
         if (this.other_schools) {
-            console.log("Previous School details: ");
+            console.log("\nPrevious School details: ");
 
             for (const school of this.other_schools) {
                 if (school.name_of_the_school)
@@ -658,12 +658,12 @@ class User_Information extends Facebook {
                     console.log("Year: Hidden or unavailable");
             }
         } else
-            console.log("Previous School details: Hidden or unavailable");
+            console.log("\nPrevious School details: Hidden or unavailable");
     }
 
     getContact_Information = () => {
 
-        console.log("Contact Information: ");
+        console.log("\nContact Information: ");
         console.log("Mobile no(s). " + this.contact_information.mobilephone.toString());
         console.log("Email ID(s): " + this.contact_information.email.toString());
         console.log("Facebook URL: " + this.contact_information.facebook_url);
@@ -686,7 +686,7 @@ class User_Information extends Facebook {
 
                 console.log("Neighbourhood: " + this.Address.neighbourhood);
         } else
-            console.log("Address Details: Hidden or unavailable");
+            console.log("\nAddress Details: Hidden or unavailable");
 
     }
 

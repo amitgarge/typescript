@@ -148,16 +148,8 @@ class Video extends Channel {
         console.log("Is new? " + this.relatedVideos._isNew["0"]);
         console.log("Is Live now? " + this.relatedVideos._isLiveNow["0"]);
     }
-    getChannelInformaion = () => {
-        //calling channel information methods
-        this.getChannel();
-        this.isChannelVerified();
-        this.getChannelCategory();
-        this.isChannelSubscribedByUser();
-        this.getTotalChannelSubscribers();
-    }
 
-    getVideoInformation = () => {
+    getAll_Video_Related_Information = () => {
         //calling video information methods
         this.getTitle();
         this.getVideoUrl();
@@ -169,6 +161,13 @@ class Video extends Channel {
         this.getTotalLikes();
         this.getTotalDislikes();
         this.getCommentsCount();
+
+        this.getChannel();
+        this.isChannelVerified();
+        this.getChannelCategory();
+        this.isChannelSubscribedByUser();
+        this.getTotalChannelSubscribers();
+
         this.getRelatedVideoInformation();
     }
 }//class 'Video' ends
@@ -176,18 +175,5 @@ class Video extends Channel {
 //creating the object of Video class
 let angular = new Video("Hitesh Choudhary", ["Yes", 3], "Science and Technology", ["No", 3], ["No", 3], "11K", "Introduction to Angular", "some url", "#angular", "22 Jul 2017", "22:00", "Introduction to Angular 4.0", 1212, 121, 0, 121, { _title: "Angular 2", _length: "2:00", _channel: "Hitesh Choudhary", _published: "22 Jul 2018", _views: 100, _isRecommendedForYou: ["Yes", 3], _isNew: ["No", 3], _isLiveNow: ["No", 3] });
 
-//using 'switch' calling the desired function
-let choice = prompt("Choose any one of the following: \n\n1. Get Channel Information \n2. Get Video Information\n\nEnter your choice:");
-
-switch (choice) {
-    case "1":
-        angular.getChannelInformaion();
-        break;
-
-    case "2":
-        angular.getVideoInformation();
-        break;
-
-    default:
-        console.log("Enter a valid choice");
-}
+//calling method to get all information about video and channel
+angular.getAll_Video_Related_Information();

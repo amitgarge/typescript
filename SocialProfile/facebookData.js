@@ -166,14 +166,14 @@ var Facebook = /** @class */ (function () {
         };
         this.getFamily_Member_Details = function () {
             if (_this.family_members.family_member_name) {
-                console.log("Family member details- ");
+                console.log("\nFamily member details- ");
                 console.log("Name: " + _this.family_members.family_member_name);
                 console.log("Relation: " + _this.family_members.realtion);
                 console.log("Profile url: " + _this.family_members.family_member_profile_url);
                 console.log("Profile Picture url: " + _this.family_members.family_member_profile_url);
             }
             else
-                console.log("Family member details- Hidden or unavailable");
+                console.log("\nFamily member details- Hidden or unavailable");
         };
         this.getFriends_Count = function () {
             console.log("Total friends: " + _this.friends_count.no_of_friends);
@@ -182,7 +182,7 @@ var Facebook = /** @class */ (function () {
             console.log("No. of following: " + _this.friends_count.no_of_follwing);
         };
         this.getFriend_Info = function () {
-            console.log("Friend Information-");
+            console.log("\nFriend Information-");
             console.log("Name: " + _this.friend_info.friend_name);
             console.log("No. of friends: " + _this.friend_info.friends_total_friends);
             console.log("Mutual Friends: " + _this.friend_info.mutual_friends);
@@ -348,7 +348,7 @@ var User_Information = /** @class */ (function (_super) {
         };
         _this.getWork = function () {
             if (_this.work) {
-                console.log("Current Work Details: ");
+                console.log("\nCurrent Work Details: ");
                 if (_this.work.designation)
                     console.log("Designation: " + _this.work.designation);
                 else
@@ -363,11 +363,11 @@ var User_Information = /** @class */ (function (_super) {
                     console.log("Working since: Hidden or unavailable");
             }
             else
-                console.log("Current Work Details: Hidden or unavailable");
+                console.log("\nCurrent Work Details: Hidden or unavailable");
         };
         _this.getPrevious_Work = function () {
             if (_this.previous_work) {
-                console.log("Previous Work details: ");
+                console.log("\nPrevious Work details: ");
                 for (var _i = 0, _a = _this.previous_work; _i < _a.length; _i++) {
                     var work = _a[_i];
                     if (work.designation)
@@ -385,7 +385,7 @@ var User_Information = /** @class */ (function (_super) {
                 }
             }
             else
-                console.log("Previous work details: Hidden or unavailable");
+                console.log("\nPrevious work details: Hidden or unavailable");
         };
         _this.getProfessional_Skills = function () {
             if (_this.professional_skills)
@@ -395,7 +395,7 @@ var User_Information = /** @class */ (function (_super) {
         };
         _this.getUniversity = function () {
             if (_this.university) {
-                console.log("University details: ");
+                console.log("\nUniversity details: ");
                 if (_this.university.degree)
                     console.log("Degree: " + _this.university.degree);
                 else
@@ -410,11 +410,11 @@ var User_Information = /** @class */ (function (_super) {
                     console.log("Year: Hidden or unavailable");
             }
             else
-                console.log("University Details: Hidden or unavailable");
+                console.log("\nUniversity Details: Hidden or unavailable");
         };
         _this.getHigh_School = function () {
             if (_this.high_school) {
-                console.log("High School details: ");
+                console.log("\nHigh School details: ");
                 if (_this.high_school.name_of_the_school)
                     console.log("Name of the school: " + _this.high_school.name_of_the_school + ", " + _this.high_school.location);
                 else
@@ -425,11 +425,11 @@ var User_Information = /** @class */ (function (_super) {
                     console.log("Year: Hidden or unavailable");
             }
             else
-                console.log("High school details: Hidden or unavailable");
+                console.log("\nHigh school details: Hidden or unavailable");
         };
         _this.getOther_Schools = function () {
             if (_this.other_schools) {
-                console.log("Previous School details: ");
+                console.log("\nPrevious School details: ");
                 for (var _i = 0, _a = _this.other_schools; _i < _a.length; _i++) {
                     var school = _a[_i];
                     if (school.name_of_the_school)
@@ -443,10 +443,10 @@ var User_Information = /** @class */ (function (_super) {
                 }
             }
             else
-                console.log("Previous School details: Hidden or unavailable");
+                console.log("\nPrevious School details: Hidden or unavailable");
         };
         _this.getContact_Information = function () {
-            console.log("Contact Information: ");
+            console.log("\nContact Information: ");
             console.log("Mobile no(s). " + _this.contact_information.mobilephone.toString());
             console.log("Email ID(s): " + _this.contact_information.email.toString());
             console.log("Facebook URL: " + _this.contact_information.facebook_url);
@@ -467,7 +467,7 @@ var User_Information = /** @class */ (function (_super) {
                     console.log("Neighbourhood: " + _this.Address.neighbourhood);
             }
             else
-                console.log("Address Details: Hidden or unavailable");
+                console.log("\nAddress Details: Hidden or unavailable");
         };
         _this.getWebsite_And_Social_Links = function () {
             if (_this.website_and_social_links.website)

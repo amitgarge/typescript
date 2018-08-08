@@ -120,15 +120,7 @@ var Video = /** @class */ (function (_super) {
             console.log("Is new? " + _this.relatedVideos._isNew["0"]);
             console.log("Is Live now? " + _this.relatedVideos._isLiveNow["0"]);
         };
-        _this.getChannelInformaion = function () {
-            //calling channel information methods
-            _this.getChannel();
-            _this.isChannelVerified();
-            _this.getChannelCategory();
-            _this.isChannelSubscribedByUser();
-            _this.getTotalChannelSubscribers();
-        };
-        _this.getVideoInformation = function () {
+        _this.getAll_Video_Related_Information = function () {
             //calling video information methods
             _this.getTitle();
             _this.getVideoUrl();
@@ -140,6 +132,11 @@ var Video = /** @class */ (function (_super) {
             _this.getTotalLikes();
             _this.getTotalDislikes();
             _this.getCommentsCount();
+            _this.getChannel();
+            _this.isChannelVerified();
+            _this.getChannelCategory();
+            _this.isChannelSubscribedByUser();
+            _this.getTotalChannelSubscribers();
             _this.getRelatedVideoInformation();
         };
         //Initailizing this class' properties
@@ -168,15 +165,5 @@ var Video = /** @class */ (function (_super) {
 }(Channel)); //class 'Video' ends
 //creating the object of Video class
 var angular = new Video("Hitesh Choudhary", ["Yes", 3], "Science and Technology", ["No", 3], ["No", 3], "11K", "Introduction to Angular", "some url", "#angular", "22 Jul 2017", "22:00", "Introduction to Angular 4.0", 1212, 121, 0, 121, { _title: "Angular 2", _length: "2:00", _channel: "Hitesh Choudhary", _published: "22 Jul 2018", _views: 100, _isRecommendedForYou: ["Yes", 3], _isNew: ["No", 3], _isLiveNow: ["No", 3] });
-//using 'switch' calling the desired function
-var choice = prompt("Choose any one of the following: \n\n1. Get Channel Information \n2. Get Video Information\n\nEnter your choice:");
-switch (choice) {
-    case "1":
-        angular.getChannelInformaion();
-        break;
-    case "2":
-        angular.getVideoInformation();
-        break;
-    default:
-        console.log("Enter a valid choice");
-}
+//calling method to get all information about video and channel
+angular.getAll_Video_Related_Information();
