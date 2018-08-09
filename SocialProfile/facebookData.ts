@@ -103,36 +103,36 @@ class Facebook {
 
     getCoverPhoto = () => {
         if (this.cover_photo_url)
-            console.log("Cover Photo: " + this.cover_photo_url);
+            console.log("\nCover Photo: " + this.cover_photo_url);
         else
-            console.log("Cover Photo: Hidden or unavailable");
+            console.log("\nCover Photo: Hidden or unavailable");
     }
 
     getProfilePhoto = () => {
         if (this.profile_photo_url)
-            console.log("Profile Picture: " + this.profile_photo_url);
+            console.log("\nProfile Picture: " + this.profile_photo_url);
         else
-            console.log("Profile Picture: Hidden or unavailable");
+            console.log("\nProfile Picture: Hidden or unavailable");
     }
 
     getBio = () => {
         if (this.bio)
-            console.log("Bio: " + this.bio);
+            console.log("\nBio: " + this.bio);
         else
-            console.log("Bio: Hidden or unavailable");
+            console.log("\nBio: Hidden or unavailable");
     }
 
     getAbout = () => {
         if (this.about)
-            console.log("About: " + this.about);
+            console.log("\nAbout: " + this.about);
         else
-            console.log("About: Hidden or unavailable");
+            console.log("\nAbout: Hidden or unavailable");
     }
     getNick_Name = () => {
         if (this.nick_name)
-            console.log("Nick Name: " + this.nick_name);
+            console.log("\nNick Name: " + this.nick_name);
         else
-            console.log("Nick Name: Hidden or unavailable");
+            console.log("\nNick Name: Hidden or unavailable");
 
     }
     getBirth_Name = () => {
@@ -198,53 +198,53 @@ class Facebook {
 
     getFavorite_Quotes = () => {
         if (this.favorite_quotes)
-            console.log("Favorite Quotes: " + this.favorite_quotes);
+            console.log("\nFavorite Quotes: " + this.favorite_quotes);
         else
-            console.log("Favorite Quotes: Hidden or Unavailable");
+            console.log("\nFavorite Quotes: Hidden or Unavailable");
     }
 
     getKnown_Languages = () => {
         if (this.languages_known)
-            console.log("Languages Known: " + this.languages_known.toString());
+            console.log("\nLanguages Known: " + this.languages_known.toString());
         else
-            console.log("Languages Known: Hidden or unavailable")
+            console.log("\nLanguages Known: Hidden or unavailable")
     }
 
     getReligiuos_Views = () => {
         if (this.religious_views)
-            console.log("Religious Views: " + this.religious_views);
+            console.log("\nReligious Views: " + this.religious_views);
         else
-            console.log("Religious Views: Hidden or unavailable");
+            console.log("\nReligious Views: Hidden or unavailable");
     }
 
     getPolitical_Views = () => {
         if (this.political_views)
-            console.log("Political Views: " + this.political_views);
+            console.log("\nPolitical Views: " + this.political_views);
         else
-            console.log("Political Views: Hidden or unavailable")
+            console.log("\nPolitical Views: Hidden or unavailable")
     }
 
     getRelationship_Status = () => {
         if (this.relationship_status)
-            console.log("Relationship Status: " + this.relationship_status);
+            console.log("\nRelationship Status: " + this.relationship_status);
         else
-            console.log("Relationship status: Hidden or unavailable");
+            console.log("\nRelationship status: Hidden or unavailable");
     }
 
     getInterested_In = () => {
         if (this.interested_in)
-            console.log("Interested in: " + this.interested_in);
+            console.log("\nInterested in: " + this.interested_in);
         else
-            console.log("Interested in: Hidden or unavailable")
+            console.log("\nInterested in: Hidden or unavailable")
     }
 
     getBlood_DonationDetails = () => {
         if (this.blood_donations.blood_group) {
-            console.log("Blood Group: " + this.blood_donations.blood_group);
+            console.log("\nBlood Group: " + this.blood_donations.blood_group);
             console.log("Have donated blood? " + this.blood_donations.have_donated_blood);
         }
         else
-            console.log("Blood Group: Hidden or unavailable")
+            console.log("\nBlood Group: Hidden or unavailable")
     }
 
     getFamily_Member_Details = () => {
@@ -500,7 +500,7 @@ class User_Information extends Facebook {
 
     //Methods Definitions start
     getName = () => {
-        console.log("Name: " + this.name);
+        console.log("\nName: " + this.name);
     }
 
     getDate_Of_Birth = () => {
@@ -545,9 +545,9 @@ class User_Information extends Facebook {
 
     getOther_Cities = () => {
         if (this.other_cities)
-            console.log("Places liven in: " + this.other_cities.toString());
+            console.log("\nPlaces liven in: " + this.other_cities.toString());
         else
-            console.log("Places lived in: Hidden or unavailable.");
+            console.log("\nPlaces lived in: Hidden or unavailable.");
 
     }
 
@@ -556,19 +556,19 @@ class User_Information extends Facebook {
             console.log("\nCurrent Work Details: ");
 
             if (this.work.designation)
-                console.log("Designation: " + this.work.designation);
+                console.log("\nDesignation: " + this.work.designation);
             else
                 console.log("Designation: Hidden or unavailable");
 
             if (this.work.name_of_office)
-                console.log("Name of the Office/Company: " + this.work.name_of_office + ", " + this.work.location);
+                console.log("\nName of the Office/Company: " + this.work.name_of_office + ", " + this.work.location);
             else
-                console.log("Name of the office/Company: Hidden or unavailable");
+                console.log("\nName of the office/Company: Hidden or unavailable");
 
             if (this.work.working_since)
-                console.log("Working here since: " + this.work.working_since);
+                console.log("\nWorking here since: " + this.work.working_since);
             else
-                console.log("Working since: Hidden or unavailable");
+                console.log("\nWorking since: Hidden or unavailable");
         }
         else
             console.log("\nCurrent Work Details: Hidden or unavailable");
@@ -580,7 +580,7 @@ class User_Information extends Facebook {
             for (const work of this.previous_work) {
 
                 if (work.designation)
-                    console.log("Designation: " + work.designation);
+                    console.log("\nDesignation: " + work.designation);
                 else
                     console.log("Designation: Hidden or unavailable");
 
@@ -600,28 +600,28 @@ class User_Information extends Facebook {
 
     getProfessional_Skills = () => {
         if (this.professional_skills)
-            console.log("Professional Skills: " + this.professional_skills);
+            console.log("\nProfessional Skills: " + this.professional_skills);
         else
-            console.log("Professional Skills: Hidden or unavailable");
+            console.log("\nProfessional Skills: Hidden or unavailable");
     }
 
     getUniversity = () => {
         if (this.university) {
             console.log("\nUniversity details: ");
             if (this.university.degree)
-                console.log("Degree: " + this.university.degree);
+                console.log("\nDegree: " + this.university.degree);
             else
-                console.log("Degree: Hidden or unavailable");
+                console.log("\nDegree: Hidden or unavailable");
 
             if (this.university.name_of_the_college)
-                console.log("Name of the college: " + this.university.name_of_the_college + ", " + this.university.location);
+                console.log("\nName of the college: " + this.university.name_of_the_college + ", " + this.university.location);
             else
-                console.log("Name of the college: Hidden or unavailable");
+                console.log("\nName of the college: Hidden or unavailable");
 
             if (this.university.completed_in)
-                console.log("Year: " + this.university.completed_in);
+                console.log("\nYear: " + this.university.completed_in);
             else
-                console.log("Year: Hidden or unavailable");
+                console.log("\nYear: Hidden or unavailable");
         } else
             console.log("\nUniversity Details: Hidden or unavailable");
     }
@@ -630,9 +630,9 @@ class User_Information extends Facebook {
         if (this.high_school) {
             console.log("\nHigh School details: ");
             if (this.high_school.name_of_the_school)
-                console.log("Name of the school: " + this.high_school.name_of_the_school + ", " + this.high_school.location);
+                console.log("\nName of the school: " + this.high_school.name_of_the_school + ", " + this.high_school.location);
             else
-                console.log("Name of the school: Hidden or unavailable");
+                console.log("\nName of the school: Hidden or unavailable");
 
             if (this.high_school.completed_in)
                 console.log("Year: " + this.high_school.completed_in);
@@ -648,9 +648,9 @@ class User_Information extends Facebook {
 
             for (const school of this.other_schools) {
                 if (school.name_of_the_school)
-                    console.log("Name of the school: " + school.name_of_the_school + ", " + school.location);
+                    console.log("\nName of the school: " + school.name_of_the_school + ", " + school.location);
                 else
-                    console.log("Nam of the school: Hidden or unavailable");
+                    console.log("Name of the school: Hidden or unavailable");
 
                 if (school.completed_in)
                     console.log("Year: " + school.completed_in);
@@ -668,33 +668,30 @@ class User_Information extends Facebook {
         console.log("Email ID(s): " + this.contact_information.email.toString());
         console.log("Facebook URL: " + this.contact_information.facebook_url);
         if (this.contact_information.phone_no)
-            console.log("Phone no: " + this.contact_information.phone_no.toString());
+            console.log("\nPhone no: " + this.contact_information.phone_no.toString());
         else
-            console.log("Phone no: Hidden or unavailable");
+            console.log("\nPhone no: Hidden or unavailable");
     }
 
     getAddress = () => {
         if (this.Address) {
             if (this.Address.address)
-                console.log("Address: " + this.Address.address + ", " + this.Address.town_or_city);
+                console.log("\nAddress: " + this.Address.address + ", " + this.Address.town_or_city);
             else
-                console.log("Address: Hidden or unavaiable")
-
+                console.log("\nAddress: Hidden or unavaiable")
             if (this.Address.zip)
                 console.log("Zip: " + this.Address.zip);
             else
-
                 console.log("Neighbourhood: " + this.Address.neighbourhood);
         } else
             console.log("\nAddress Details: Hidden or unavailable");
-
     }
 
     getWebsite_And_Social_Links = () => {
         if (this.website_and_social_links.website)
-            console.log("Website(s): " + this.website_and_social_links.website.toString());
+            console.log("\nWebsite(s): " + this.website_and_social_links.website.toString());
         else
-            console.log("Website(s): Hidden or unavailable");
+            console.log("\nWebsite(s): Hidden or unavailable");
 
         if (this.website_and_social_links.public_Key)
             console.log("Public Key: " + this.website_and_social_links.public_Key);
@@ -703,7 +700,7 @@ class User_Information extends Facebook {
 
 
         if (this.website_and_social_links.social_link) {
-            console.log("Social Links details: ");
+            console.log("\nSocial Links details: ");
 
             if (this.website_and_social_links.social_link.instagram)
                 console.log("Instagram url: " + this.website_and_social_links.social_link.instagram);
@@ -720,7 +717,7 @@ class User_Information extends Facebook {
             else
                 console.log("Twitter: Hidden or unavailable");
         } else
-            console.log("Social Links details: Hidden or unavailable");
+            console.log("\nSocial Links details: Hidden or unavailable");
     }
 
     getAll_User_Information = () => {
@@ -747,42 +744,42 @@ class User_Information extends Facebook {
 
 /* Creating the object of the class "User_Information" */
 
-let user1 = new User_Information("some url", "some url", "this is amit", "this is amit", "",
-    "", "", "", "", "", "", "", "", true, "Impossible is nothing",
-    ["English", "Marathi", "Hindi"], "Hindu", "BJP", "single", "Men and women",
-    { blood_group: "A-", have_donated_blood: false },
+let user1 = new User_Information("//url", "//url", "Hey there! this is Akash", "Hey there! this is Akash", 
+    "","", "", "", "", "", "", "", "", true, "Impossible is nothing",
+    ["English", "Marathi", "Hindi","Telugu"], "Hindu", "BJP", "single", "Men and women",
+    { blood_group: "B+", have_donated_blood: false },
     {
-        family_member_name: "Anil Garge",
-        family_member_profile_photo: "some url",
-        family_member_profile_url: "some url",
-        realtion: "Uncle"
+        family_member_name: "Akshay Patil",
+        family_member_profile_photo: "//url",
+        family_member_profile_url: "//url",
+        realtion: "Brother"
     },
-    { no_of_friends: 74, current_city_friends: 44, no_of_follerwers: 5, no_of_follwing: 2 },
+    { no_of_friends: 100, current_city_friends: 44, no_of_follerwers: 55, no_of_follwing: 1 },
     {
         friend_name: "Yogesh Arak",
         friends_total_friends: 500,
         mutual_friends: 23,
-        friend_profile_url: "some url",
-        friend_profile_photo_url: "some url",
+        friend_profile_url: "//url",
+        friend_profile_photo_url: "//url",
         friend_no_of_followers: 55
     },
-    "Amit Garge", "05/19/1992", "Male", "Aurangabad, Maharashta", "Latur,Maharashtra",
+    "Akash Patil", "11/19/1993", "Male", "Pune, Maharashta", "Latur,Maharashtra",
     {
-        designation: "MEAN Stack Develoer",
-        name_of_office: "Microsoft",
-        location: "Pune",
-        working_since: "2016"
+        designation: "",
+        name_of_office: "",
+        location: "",
+        working_since: ""
     },
     {
-        mobilephone: [8087269946, 8999079064],
-        email: ["amit.garge19@gmail.com", "ameet.garge@gmail.com"],
-        facebook_url: "some url",
-        phone_no: [9898, 89898]
+        mobilephone: [9850759812, 9860123512],
+        email: ["akash.patil45@gmail.com"],
+        facebook_url: "//url",
+        phone_no: [912044557799, 912089898787]
     },
     {
-        address: "N-4,cidco",
-        town_or_city: "Aurangabad",
-        zip: 431001,
+        address: "SadashivPeth",
+        town_or_city: "Pune",
+        zip: 411001,
         neighbourhood: "",
     },
 
@@ -798,23 +795,23 @@ let user1 = new User_Information("some url", "some url", "this is amit", "this i
         working_since: ""
     }],
     {
-        website: ["some url", "some url"],
-        public_Key: "some key",
+        website: ["//url", "//url"],
+        public_Key: "*KEY*",
         social_link: {
-            instagram: "some link",
-            linkedin: "some link",
-            twitter: "some link"
+            instagram: "//url",
+            linkedin: "//url",
+            twitter: ""
         }
     },
     {
         degree: "MCA",
-        name_of_the_college: "MIT Aurangabad",
-        location: "Aurangabad, Maharashtra",
-        completed_in: "2016"
+        name_of_the_college: "MIT",
+        location: "Pune, Maharashtra",
+        completed_in: "2018"
     },
     [{
         name_of_the_school: "Yoganand",
-        location: "Partur",
+        location: "Pune",
         completed_in: "2005"
     }, {
         name_of_the_school: "Keshavraj",

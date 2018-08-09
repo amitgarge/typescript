@@ -38,33 +38,33 @@ var Facebook = /** @class */ (function () {
         this.interested_in = interested_in;
         this.getCoverPhoto = function () {
             if (_this.cover_photo_url)
-                console.log("Cover Photo: " + _this.cover_photo_url);
+                console.log("\nCover Photo: " + _this.cover_photo_url);
             else
-                console.log("Cover Photo: Hidden or unavailable");
+                console.log("\nCover Photo: Hidden or unavailable");
         };
         this.getProfilePhoto = function () {
             if (_this.profile_photo_url)
-                console.log("Profile Picture: " + _this.profile_photo_url);
+                console.log("\nProfile Picture: " + _this.profile_photo_url);
             else
-                console.log("Profile Picture: Hidden or unavailable");
+                console.log("\nProfile Picture: Hidden or unavailable");
         };
         this.getBio = function () {
             if (_this.bio)
-                console.log("Bio: " + _this.bio);
+                console.log("\nBio: " + _this.bio);
             else
-                console.log("Bio: Hidden or unavailable");
+                console.log("\nBio: Hidden or unavailable");
         };
         this.getAbout = function () {
             if (_this.about)
-                console.log("About: " + _this.about);
+                console.log("\nAbout: " + _this.about);
             else
-                console.log("About: Hidden or unavailable");
+                console.log("\nAbout: Hidden or unavailable");
         };
         this.getNick_Name = function () {
             if (_this.nick_name)
-                console.log("Nick Name: " + _this.nick_name);
+                console.log("\nNick Name: " + _this.nick_name);
             else
-                console.log("Nick Name: Hidden or unavailable");
+                console.log("\nNick Name: Hidden or unavailable");
         };
         this.getBirth_Name = function () {
             if (_this.birth_name)
@@ -122,47 +122,47 @@ var Facebook = /** @class */ (function () {
         };
         this.getFavorite_Quotes = function () {
             if (_this.favorite_quotes)
-                console.log("Favorite Quotes: " + _this.favorite_quotes);
+                console.log("\nFavorite Quotes: " + _this.favorite_quotes);
             else
-                console.log("Favorite Quotes: Hidden or Unavailable");
+                console.log("\nFavorite Quotes: Hidden or Unavailable");
         };
         this.getKnown_Languages = function () {
             if (_this.languages_known)
-                console.log("Languages Known: " + _this.languages_known.toString());
+                console.log("\nLanguages Known: " + _this.languages_known.toString());
             else
-                console.log("Languages Known: Hidden or unavailable");
+                console.log("\nLanguages Known: Hidden or unavailable");
         };
         this.getReligiuos_Views = function () {
             if (_this.religious_views)
-                console.log("Religious Views: " + _this.religious_views);
+                console.log("\nReligious Views: " + _this.religious_views);
             else
-                console.log("Religious Views: Hidden or unavailable");
+                console.log("\nReligious Views: Hidden or unavailable");
         };
         this.getPolitical_Views = function () {
             if (_this.political_views)
-                console.log("Political Views: " + _this.political_views);
+                console.log("\nPolitical Views: " + _this.political_views);
             else
-                console.log("Political Views: Hidden or unavailable");
+                console.log("\nPolitical Views: Hidden or unavailable");
         };
         this.getRelationship_Status = function () {
             if (_this.relationship_status)
-                console.log("Relationship Status: " + _this.relationship_status);
+                console.log("\nRelationship Status: " + _this.relationship_status);
             else
-                console.log("Relationship status: Hidden or unavailable");
+                console.log("\nRelationship status: Hidden or unavailable");
         };
         this.getInterested_In = function () {
             if (_this.interested_in)
-                console.log("Interested in: " + _this.interested_in);
+                console.log("\nInterested in: " + _this.interested_in);
             else
-                console.log("Interested in: Hidden or unavailable");
+                console.log("\nInterested in: Hidden or unavailable");
         };
         this.getBlood_DonationDetails = function () {
             if (_this.blood_donations.blood_group) {
-                console.log("Blood Group: " + _this.blood_donations.blood_group);
+                console.log("\nBlood Group: " + _this.blood_donations.blood_group);
                 console.log("Have donated blood? " + _this.blood_donations.have_donated_blood);
             }
             else
-                console.log("Blood Group: Hidden or unavailable");
+                console.log("\nBlood Group: Hidden or unavailable");
         };
         this.getFamily_Member_Details = function () {
             if (_this.family_members.family_member_name) {
@@ -308,7 +308,7 @@ var User_Information = /** @class */ (function (_super) {
         _this.other_cities = other_cities;
         //Methods Definitions start
         _this.getName = function () {
-            console.log("Name: " + _this.name);
+            console.log("\nName: " + _this.name);
         };
         _this.getDate_Of_Birth = function () {
             //"Date of birth" should in the format of 'mm-dd-yyyy'
@@ -342,25 +342,25 @@ var User_Information = /** @class */ (function (_super) {
         };
         _this.getOther_Cities = function () {
             if (_this.other_cities)
-                console.log("Places liven in: " + _this.other_cities.toString());
+                console.log("\nPlaces liven in: " + _this.other_cities.toString());
             else
-                console.log("Places lived in: Hidden or unavailable.");
+                console.log("\nPlaces lived in: Hidden or unavailable.");
         };
         _this.getWork = function () {
             if (_this.work) {
                 console.log("\nCurrent Work Details: ");
                 if (_this.work.designation)
-                    console.log("Designation: " + _this.work.designation);
+                    console.log("\nDesignation: " + _this.work.designation);
                 else
                     console.log("Designation: Hidden or unavailable");
                 if (_this.work.name_of_office)
-                    console.log("Name of the Office/Company: " + _this.work.name_of_office + ", " + _this.work.location);
+                    console.log("\nName of the Office/Company: " + _this.work.name_of_office + ", " + _this.work.location);
                 else
-                    console.log("Name of the office/Company: Hidden or unavailable");
+                    console.log("\nName of the office/Company: Hidden or unavailable");
                 if (_this.work.working_since)
-                    console.log("Working here since: " + _this.work.working_since);
+                    console.log("\nWorking here since: " + _this.work.working_since);
                 else
-                    console.log("Working since: Hidden or unavailable");
+                    console.log("\nWorking since: Hidden or unavailable");
             }
             else
                 console.log("\nCurrent Work Details: Hidden or unavailable");
@@ -371,7 +371,7 @@ var User_Information = /** @class */ (function (_super) {
                 for (var _i = 0, _a = _this.previous_work; _i < _a.length; _i++) {
                     var work = _a[_i];
                     if (work.designation)
-                        console.log("Designation: " + work.designation);
+                        console.log("\nDesignation: " + work.designation);
                     else
                         console.log("Designation: Hidden or unavailable");
                     if (work.name_of_office)
@@ -389,25 +389,25 @@ var User_Information = /** @class */ (function (_super) {
         };
         _this.getProfessional_Skills = function () {
             if (_this.professional_skills)
-                console.log("Professional Skills: " + _this.professional_skills);
+                console.log("\nProfessional Skills: " + _this.professional_skills);
             else
-                console.log("Professional Skills: Hidden or unavailable");
+                console.log("\nProfessional Skills: Hidden or unavailable");
         };
         _this.getUniversity = function () {
             if (_this.university) {
                 console.log("\nUniversity details: ");
                 if (_this.university.degree)
-                    console.log("Degree: " + _this.university.degree);
+                    console.log("\nDegree: " + _this.university.degree);
                 else
-                    console.log("Degree: Hidden or unavailable");
+                    console.log("\nDegree: Hidden or unavailable");
                 if (_this.university.name_of_the_college)
-                    console.log("Name of the college: " + _this.university.name_of_the_college + ", " + _this.university.location);
+                    console.log("\nName of the college: " + _this.university.name_of_the_college + ", " + _this.university.location);
                 else
-                    console.log("Name of the college: Hidden or unavailable");
+                    console.log("\nName of the college: Hidden or unavailable");
                 if (_this.university.completed_in)
-                    console.log("Year: " + _this.university.completed_in);
+                    console.log("\nYear: " + _this.university.completed_in);
                 else
-                    console.log("Year: Hidden or unavailable");
+                    console.log("\nYear: Hidden or unavailable");
             }
             else
                 console.log("\nUniversity Details: Hidden or unavailable");
@@ -416,9 +416,9 @@ var User_Information = /** @class */ (function (_super) {
             if (_this.high_school) {
                 console.log("\nHigh School details: ");
                 if (_this.high_school.name_of_the_school)
-                    console.log("Name of the school: " + _this.high_school.name_of_the_school + ", " + _this.high_school.location);
+                    console.log("\nName of the school: " + _this.high_school.name_of_the_school + ", " + _this.high_school.location);
                 else
-                    console.log("Name of the school: Hidden or unavailable");
+                    console.log("\nName of the school: Hidden or unavailable");
                 if (_this.high_school.completed_in)
                     console.log("Year: " + _this.high_school.completed_in);
                 else
@@ -433,9 +433,9 @@ var User_Information = /** @class */ (function (_super) {
                 for (var _i = 0, _a = _this.other_schools; _i < _a.length; _i++) {
                     var school = _a[_i];
                     if (school.name_of_the_school)
-                        console.log("Name of the school: " + school.name_of_the_school + ", " + school.location);
+                        console.log("\nName of the school: " + school.name_of_the_school + ", " + school.location);
                     else
-                        console.log("Nam of the school: Hidden or unavailable");
+                        console.log("Name of the school: Hidden or unavailable");
                     if (school.completed_in)
                         console.log("Year: " + school.completed_in);
                     else
@@ -451,16 +451,16 @@ var User_Information = /** @class */ (function (_super) {
             console.log("Email ID(s): " + _this.contact_information.email.toString());
             console.log("Facebook URL: " + _this.contact_information.facebook_url);
             if (_this.contact_information.phone_no)
-                console.log("Phone no: " + _this.contact_information.phone_no.toString());
+                console.log("\nPhone no: " + _this.contact_information.phone_no.toString());
             else
-                console.log("Phone no: Hidden or unavailable");
+                console.log("\nPhone no: Hidden or unavailable");
         };
         _this.getAddress = function () {
             if (_this.Address) {
                 if (_this.Address.address)
-                    console.log("Address: " + _this.Address.address + ", " + _this.Address.town_or_city);
+                    console.log("\nAddress: " + _this.Address.address + ", " + _this.Address.town_or_city);
                 else
-                    console.log("Address: Hidden or unavaiable");
+                    console.log("\nAddress: Hidden or unavaiable");
                 if (_this.Address.zip)
                     console.log("Zip: " + _this.Address.zip);
                 else
@@ -471,15 +471,15 @@ var User_Information = /** @class */ (function (_super) {
         };
         _this.getWebsite_And_Social_Links = function () {
             if (_this.website_and_social_links.website)
-                console.log("Website(s): " + _this.website_and_social_links.website.toString());
+                console.log("\nWebsite(s): " + _this.website_and_social_links.website.toString());
             else
-                console.log("Website(s): Hidden or unavailable");
+                console.log("\nWebsite(s): Hidden or unavailable");
             if (_this.website_and_social_links.public_Key)
                 console.log("Public Key: " + _this.website_and_social_links.public_Key);
             else
                 console.log("Public Key: Hidden or unavailable");
             if (_this.website_and_social_links.social_link) {
-                console.log("Social Links details: ");
+                console.log("\nSocial Links details: ");
                 if (_this.website_and_social_links.social_link.instagram)
                     console.log("Instagram url: " + _this.website_and_social_links.social_link.instagram);
                 else
@@ -494,7 +494,7 @@ var User_Information = /** @class */ (function (_super) {
                     console.log("Twitter: Hidden or unavailable");
             }
             else
-                console.log("Social Links details: Hidden or unavailable");
+                console.log("\nSocial Links details: Hidden or unavailable");
         };
         _this.getAll_User_Information = function () {
             //calling all the above methods
@@ -561,32 +561,32 @@ var User_Information = /** @class */ (function (_super) {
     return User_Information;
 }(Facebook)); //class 'User_Information' ends
 /* Creating the object of the class "User_Information" */
-var user1 = new User_Information("some url", "some url", "this is amit", "this is amit", "", "", "", "", "", "", "", "", "", true, "Impossible is nothing", ["English", "Marathi", "Hindi"], "Hindu", "BJP", "single", "Men and women", { blood_group: "A-", have_donated_blood: false }, {
-    family_member_name: "Anil Garge",
-    family_member_profile_photo: "some url",
-    family_member_profile_url: "some url",
-    realtion: "Uncle"
-}, { no_of_friends: 74, current_city_friends: 44, no_of_follerwers: 5, no_of_follwing: 2 }, {
+var user1 = new User_Information("//url", "//url", "Hey there! this is Akash", "Hey there! this is Akash", "", "", "", "", "", "", "", "", "", true, "Impossible is nothing", ["English", "Marathi", "Hindi", "Telugu"], "Hindu", "BJP", "single", "Men and women", { blood_group: "B+", have_donated_blood: false }, {
+    family_member_name: "Akshay Patil",
+    family_member_profile_photo: "//url",
+    family_member_profile_url: "//url",
+    realtion: "Brother"
+}, { no_of_friends: 100, current_city_friends: 44, no_of_follerwers: 55, no_of_follwing: 1 }, {
     friend_name: "Yogesh Arak",
     friends_total_friends: 500,
     mutual_friends: 23,
-    friend_profile_url: "some url",
-    friend_profile_photo_url: "some url",
+    friend_profile_url: "//url",
+    friend_profile_photo_url: "//url",
     friend_no_of_followers: 55
-}, "Amit Garge", "05/19/1992", "Male", "Aurangabad, Maharashta", "Latur,Maharashtra", {
-    designation: "MEAN Stack Develoer",
-    name_of_office: "Microsoft",
-    location: "Pune",
-    working_since: "2016"
+}, "Akash Patil", "11/19/1993", "Male", "Pune, Maharashta", "Latur,Maharashtra", {
+    designation: "",
+    name_of_office: "",
+    location: "",
+    working_since: ""
 }, {
-    mobilephone: [8087269946, 8999079064],
-    email: ["amit.garge19@gmail.com", "ameet.garge@gmail.com"],
-    facebook_url: "some url",
-    phone_no: [9898, 89898]
+    mobilephone: [9850759812, 9860123512],
+    email: ["akash.patil45@gmail.com"],
+    facebook_url: "//url",
+    phone_no: [912044557799, 912089898787]
 }, {
-    address: "N-4,cidco",
-    town_or_city: "Aurangabad",
-    zip: 431001,
+    address: "SadashivPeth",
+    town_or_city: "Pune",
+    zip: 411001,
     neighbourhood: ""
 }, [{
         designation: "",
@@ -599,21 +599,21 @@ var user1 = new User_Information("some url", "some url", "this is amit", "this i
         location: "",
         working_since: ""
     }], {
-    website: ["some url", "some url"],
-    public_Key: "some key",
+    website: ["//url", "//url"],
+    public_Key: "*KEY*",
     social_link: {
-        instagram: "some link",
-        linkedin: "some link",
-        twitter: "some link"
+        instagram: "//url",
+        linkedin: "//url",
+        twitter: ""
     }
 }, {
     degree: "MCA",
-    name_of_the_college: "MIT Aurangabad",
-    location: "Aurangabad, Maharashtra",
-    completed_in: "2016"
+    name_of_the_college: "MIT",
+    location: "Pune, Maharashtra",
+    completed_in: "2018"
 }, [{
         name_of_the_school: "Yoganand",
-        location: "Partur",
+        location: "Pune",
         completed_in: "2005"
     }, {
         name_of_the_school: "Keshavraj",
