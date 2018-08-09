@@ -308,27 +308,27 @@ var User_Information = /** @class */ (function (_super) {
         _this.other_cities = other_cities;
         //Methods Definitions start
         _this.getName = function () {
-            console.log("\nName: " + _this.name);
+            console.log("Name: " + _this.name);
         };
         _this.getDate_Of_Birth = function () {
-            //"Date of birth" should in the format of 'mm-dd-yyyy'
-            console.log("Date of birth: ");
+            //"Date of birth" should in the format 'mm-dd-yyyy'
             var dob = new Date(_this.date_of_birth);
             var month = String(dob.getMonth() + 1);
             var day = String(dob.getDate());
             var year = String(dob.getFullYear());
-            console.log(day + "/" + month + "/" + year);
+            console.log("Date of birth: " + day + "/" + month + "/" + year);
             console.log("Age: " + _this.getAge(dob)); //getAge(date) is called here
         };
         _this.getAge = function (dob) {
             //calculating the age
-            var today = new Date();
+            var today = new Date(); //fetching the today's date.
             var birthDate = dob;
-            var age = today.getFullYear() - birthDate.getFullYear();
-            var month = today.getMonth() - birthDate.getMonth();
-            if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+            var age = today.getFullYear() - birthDate.getFullYear(); //Subtracting birth-year from this-year
+            var month = today.getMonth() - birthDate.getMonth(); //subtracting birth-month from this-month
+            if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate()))
+                //if month is in negative or (month is 0 i.e. birth month and this month are same && this-date is less than birth-date)
+                //subtract 1 from 'age'
                 age--;
-            }
             return age;
         };
         _this.getGender = function () {

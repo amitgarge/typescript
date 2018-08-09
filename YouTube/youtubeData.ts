@@ -68,19 +68,19 @@ class Video extends Channel {
         protected commentsCount: number,
         
         protected Usercomment:{
-            username?:string,
-            comment?:string,
-            date?: string,
-            likes?:number,
-            dislikes?:number,
+            username:string,
+            comment:string,
+            date: string,
+            likes:number,
+            dislikes:number,
             reply_count:number,
             
             reply:{   
-                username?:string,
-                reply_message?:string,
+                username:string,
+                reply_message:string,
                 reply_date:string,
-                reply_likes?:number,
-                reply_dislikes?:number
+                reply_likes:number,
+                reply_dislikes:number
             }
         },
         
@@ -171,19 +171,28 @@ class Video extends Channel {
 
     getUserComments=()=>{
         console.log("\nComments: ");
-        console.log("User name: " + this.Usercomment.username);
-        console.log("Comment: " + this.Usercomment.comment);
-        console.log("Date: "+this.Usercomment.date);
-        console.log("Likes: " + this.Usercomment.likes);
-        console.log("Dislikes: " + this.Usercomment.dislikes);
-        console.log("No. of replies: "+this.Usercomment.reply_count);
+        if(this.Usercomment.username && this.Usercomment.comment && this.Usercomment.date){
+            console.log("User name: " + this.Usercomment.username);
+            console.log("Comment: " + this.Usercomment.comment);
+            console.log("Date: "+this.Usercomment.date);
+            console.log("Likes: " + this.Usercomment.likes);
+            console.log("Dislikes: " + this.Usercomment.dislikes);
+            console.log("No. of replies: "+this.Usercomment.reply_count);
         
-        console.log("\nComment Replies:");
-        console.log("User name: " + this.Usercomment.reply.username);
-        console.log("Reply: "+ this.Usercomment.reply.reply_message);
-        console.log("Date: "+ this.Usercomment.reply.reply_date);
-        console.log("Likes: " + this.Usercomment.reply.reply_likes);
-        console.log("Dislikes: " + this.Usercomment.reply.reply_dislikes);        
+            if(this.Usercomment.reply.username || this.Usercomment.reply.reply_message 
+                ||this.Usercomment.reply.reply_date){
+
+                console.log("\nComment Replies:");
+                console.log("User name: " + this.Usercomment.reply.username);
+                console.log("Reply: "+ this.Usercomment.reply.reply_message);
+                console.log("Date: "+ this.Usercomment.reply.reply_date);
+                console.log("Likes: " + this.Usercomment.reply.reply_likes);
+                console.log("Dislikes: " + this.Usercomment.reply.reply_dislikes);
+            }else
+            console.log("No replies yet!");
+            
+        }else
+            console.log("No Comments yet!");        
     }
 
     getRelatedVideoInformation = () => {
@@ -201,6 +210,7 @@ class Video extends Channel {
     getAll_Video_Related_Information = () => {
         //calling video information methods
         this.getTitle();
+        this.getChannel();
         this.getVideoUrl();
         this.getVideoTags();
         this.getVideoPublishedDate();
@@ -210,14 +220,16 @@ class Video extends Channel {
         this.getTotalLikes();
         this.getTotalDislikes();
         this.getCommentsCount();
+        this.getUserComments();
+        
+        this.getRelatedVideoInformation();
 
-        this.getChannel();
+        console.log("\nChannel Information-");
+        
         this.isChannelVerified();
         this.getChannelCategory();
         this.isChannelSubscribedByUser();
         this.getTotalChannelSubscribers();
-        this.getUserComments();
-        this.getRelatedVideoInformation();
     }
 }//class 'Video' ends
 

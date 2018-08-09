@@ -112,18 +112,27 @@ var Video = /** @class */ (function (_super) {
         };
         _this.getUserComments = function () {
             console.log("\nComments: ");
-            console.log("User name: " + _this.Usercomment.username);
-            console.log("Comment: " + _this.Usercomment.comment);
-            console.log("Date: " + _this.Usercomment.date);
-            console.log("Likes: " + _this.Usercomment.likes);
-            console.log("Dislikes: " + _this.Usercomment.dislikes);
-            console.log("No. of replies: " + _this.Usercomment.reply_count);
-            console.log("\nComment Replies:");
-            console.log("User name: " + _this.Usercomment.reply.username);
-            console.log("Reply: " + _this.Usercomment.reply.reply_message);
-            console.log("Date: " + _this.Usercomment.reply.reply_date);
-            console.log("Likes: " + _this.Usercomment.reply.reply_likes);
-            console.log("Dislikes: " + _this.Usercomment.reply.reply_dislikes);
+            if (_this.Usercomment.username && _this.Usercomment.comment && _this.Usercomment.date) {
+                console.log("User name: " + _this.Usercomment.username);
+                console.log("Comment: " + _this.Usercomment.comment);
+                console.log("Date: " + _this.Usercomment.date);
+                console.log("Likes: " + _this.Usercomment.likes);
+                console.log("Dislikes: " + _this.Usercomment.dislikes);
+                console.log("No. of replies: " + _this.Usercomment.reply_count);
+                if (_this.Usercomment.reply.username || _this.Usercomment.reply.reply_message
+                    || _this.Usercomment.reply.reply_date) {
+                    console.log("\nComment Replies:");
+                    console.log("User name: " + _this.Usercomment.reply.username);
+                    console.log("Reply: " + _this.Usercomment.reply.reply_message);
+                    console.log("Date: " + _this.Usercomment.reply.reply_date);
+                    console.log("Likes: " + _this.Usercomment.reply.reply_likes);
+                    console.log("Dislikes: " + _this.Usercomment.reply.reply_dislikes);
+                }
+                else
+                    console.log("No replies yet!");
+            }
+            else
+                console.log("No Comments yet!");
         };
         _this.getRelatedVideoInformation = function () {
             console.log("\nRelated Videos");
@@ -139,6 +148,7 @@ var Video = /** @class */ (function (_super) {
         _this.getAll_Video_Related_Information = function () {
             //calling video information methods
             _this.getTitle();
+            _this.getChannel();
             _this.getVideoUrl();
             _this.getVideoTags();
             _this.getVideoPublishedDate();
@@ -148,13 +158,13 @@ var Video = /** @class */ (function (_super) {
             _this.getTotalLikes();
             _this.getTotalDislikes();
             _this.getCommentsCount();
-            _this.getChannel();
+            _this.getUserComments();
+            _this.getRelatedVideoInformation();
+            console.log("\nChannel Information-");
             _this.isChannelVerified();
             _this.getChannelCategory();
             _this.isChannelSubscribedByUser();
             _this.getTotalChannelSubscribers();
-            _this.getUserComments();
-            _this.getRelatedVideoInformation();
         };
         //Initailizing this class' properties
         _this.title = title;

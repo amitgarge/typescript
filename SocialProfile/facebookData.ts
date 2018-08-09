@@ -500,33 +500,33 @@ class User_Information extends Facebook {
 
     //Methods Definitions start
     getName = () => {
-        console.log("\nName: " + this.name);
+        console.log("Name: " + this.name);
     }
 
     getDate_Of_Birth = () => {
-        //"Date of birth" should in the format of 'mm-dd-yyyy'
-        console.log("Date of birth: ");
+        //"Date of birth" should in the format 'mm-dd-yyyy'
 
         let dob = new Date(this.date_of_birth);
         let month = String(dob.getMonth() + 1);
         let day = String(dob.getDate());
         const year = String(dob.getFullYear());
 
-        console.log(day + "/" + month + "/" + year);
+        console.log("Date of birth: "+day + "/" + month + "/" + year);
         console.log("Age: " + this.getAge(dob));    //getAge(date) is called here
     }
 
     getAge = (dob: Date): number => {
 
         //calculating the age
-        let today = new Date();
-        let birthDate = dob;
-        let age = today.getFullYear() - birthDate.getFullYear();
-        let month = today.getMonth() - birthDate.getMonth();
+        let today = new Date();     //fetching the today's date.
+        let birthDate = dob;        
+        let age = today.getFullYear() - birthDate.getFullYear();    //Subtracting birth-year from this-year
+        let month = today.getMonth() - birthDate.getMonth();        //subtracting birth-month from this-month
 
-        if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+        if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate()))
+        //if month is in negative or (month is 0 i.e. birth month and this month are same && this-date is less than birth-date)
+        //subtract 1 from 'age'
             age--;
-        }
 
         return age;
     }
